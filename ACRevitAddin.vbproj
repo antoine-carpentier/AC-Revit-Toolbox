@@ -148,14 +148,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="PresentationCore" />
-    <Reference Include="RevitAPI" Condition="'$(Configuration)' == 'Debug2015'">
-      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2015\RevitAPI.dll</HintPath>
-    </Reference>
-    <Reference Include="RevitAPIUI" Condition="'$(Configuration)' == 'Debug2015'">
-      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2015\RevitAPIUI.dll</HintPath>
-    </Reference>
     <Reference Include="RevitAPI" Condition="'$(Configuration)' == 'Debug2016'">
       <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2016\RevitAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="RevitAPI">
+      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2019\RevitAPI.dll</HintPath>
     </Reference>
     <Reference Include="RevitAPIUI" Condition="'$(Configuration)' == 'Debug2016'">
       <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2016\RevitAPIUI.dll</HintPath>
@@ -195,6 +192,9 @@
     </Reference>
     <Reference Include="RevitAPIUI" Condition="'$(Configuration)' == 'Debug2022'">
       <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2022\RevitAPIUI.dll</HintPath>
+    </Reference>
+    <Reference Include="RevitAPIUI">
+      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2019\RevitAPIUI.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -337,6 +337,18 @@
     <Content Include="ACRevitAddin.addin">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="bin\Debug2017\ACRevitAddin.dll" />
+    <Content Include="bin\Debug2017\ACRevitAddin.pdb" />
+    <Content Include="bin\Debug2018\ACRevitAddin.dll" />
+    <Content Include="bin\Debug2018\ACRevitAddin.pdb" />
+    <Content Include="bin\Debug2019\ACRevitAddin.dll" />
+    <Content Include="bin\Debug2019\ACRevitAddin.pdb" />
+    <Content Include="bin\Debug2020\ACRevitAddin.dll" />
+    <Content Include="bin\Debug2020\ACRevitAddin.pdb" />
+    <Content Include="bin\Debug2021\ACRevitAddin.dll" />
+    <Content Include="bin\Debug2021\ACRevitAddin.pdb" />
+    <Content Include="bin\Debug2022\ACRevitAddin.dll" />
+    <Content Include="bin\Debug2022\ACRevitAddin.pdb" />
     <Resource Include="Resources\ACRlogo.png" />
   </ItemGroup>
   <ItemGroup>
@@ -420,6 +432,9 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug2015\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <Target Name="AfterClean">
