@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+
+  <AddIn Type="Application">
+    <Name>Application ACRevitAddin</Name>
+    <Assembly>ACRevitAddin.dll</Assembly>
+    <ClientId>8ced540b-d014-4c36-9686-24651ec9110b</ClientId>
+    <FullClassName>ACRevitAddin.AdskApplication</FullClassName>
+    <VendorId>Antoine Carpentier</VendorId>
+    <VendorDescription> https://github.com/antoine-carpentier </VendorDescription>
+  </AddIn>
+</RevitAddIns>

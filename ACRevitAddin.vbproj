@@ -1,0 +1,520 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+      None
+    </ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{5D75A509-C2AF-46CC-8BB0-C39A6CA327DB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ACRevitAddin</RootNamespace>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <StartAction>Program</StartAction>
+    <StartProgram>$(ProgramW6432)\Autodesk\Revit 2015\Revit.exe</StartProgram>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <StartAction>Program</StartAction>
+    <StartProgram>$(ProgramW6432)\Autodesk\Revit 2015\Revit.exe</StartProgram>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyName>ACRevitAddin</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug2015|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug2015\</OutputPath>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <DefineConstants>RELEASE2015</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug2016|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug2016\</OutputPath>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <DefineConstants>RELEASE2016</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug2017|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug2017\</OutputPath>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <RemoveIntegerChecks>true</RemoveIntegerChecks>
+    <DefineConstants>RELEASE2017</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug2018|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug2018\</OutputPath>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <DefineConstants>RELEASE2018</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug2019|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug2019\</OutputPath>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <DefineConstants>RELEASE2019</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug2020|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug2020\</OutputPath>
+    <DefineConstants>RELEASE2020</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug2021|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug2021\</OutputPath>
+    <DefineConstants>RELEASE2020</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug2022|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug2022\</OutputPath>
+    <DefineConstants>RELEASE2020</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="RevitAPI" Condition="'$(Configuration)' == 'Debug2015'">
+      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2015\RevitAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="RevitAPIUI" Condition="'$(Configuration)' == 'Debug2015'">
+      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2015\RevitAPIUI.dll</HintPath>
+    </Reference>
+    <Reference Include="RevitAPI" Condition="'$(Configuration)' == 'Debug2016'">
+      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2016\RevitAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="RevitAPIUI" Condition="'$(Configuration)' == 'Debug2016'">
+      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2016\RevitAPIUI.dll</HintPath>
+    </Reference>
+    <Reference Include="RevitAPI" Condition="'$(Configuration)' == 'Debug2017'">
+      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2017\RevitAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="RevitAPIUI" Condition="'$(Configuration)' == 'Debug2017'">
+      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2017\RevitAPIUI.dll</HintPath>
+    </Reference>
+    <Reference Include="RevitAPI" Condition="'$(Configuration)' == 'Debug2018'">
+      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2018\RevitAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="RevitAPIUI" Condition="'$(Configuration)' == 'Debug2018'">
+      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2018\RevitAPIUI.dll</HintPath>
+    </Reference>
+    <Reference Include="RevitAPI" Condition="'$(Configuration)' == 'Debug2019'">
+      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2019\RevitAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="RevitAPIUI" Condition="'$(Configuration)' == 'Debug2019'">
+      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2019\RevitAPIUI.dll</HintPath>
+    </Reference>
+    <Reference Include="RevitAPI" Condition="'$(Configuration)' == 'Debug2020'">
+      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2020\RevitAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="RevitAPIUI" Condition="'$(Configuration)' == 'Debug2020'">
+      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2020\RevitAPIUI.dll</HintPath>
+    </Reference>
+    <Reference Include="RevitAPI" Condition="'$(Configuration)' == 'Debug2021'">
+      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2021\RevitAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="RevitAPIUI" Condition="'$(Configuration)' == 'Debug2021'">
+      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2021\RevitAPIUI.dll</HintPath>
+    </Reference>
+    <Reference Include="RevitAPI" Condition="'$(Configuration)' == 'Debug2022'">
+      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2022\RevitAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="RevitAPIUI" Condition="'$(Configuration)' == 'Debug2022'">
+      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2022\RevitAPIUI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Autodesk.Revit.ApplicationServices" />
+    <Import Include="Autodesk.Revit.Attributes" />
+    <Import Include="Autodesk.Revit.DB" />
+    <Import Include="Autodesk.Revit.UI" />
+    <Import Include="Autodesk.Revit.UI.Selection" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdskApplication.vb" />
+    <Compile Include="AlignLegends\AlignLegendDoc.designer.vb">
+      <DependentUpon>AlignLegendDoc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AlignLegends\AlignLegendDoc.vb" />
+    <Compile Include="AlignViews\AlignViewDoc.designer.vb">
+      <DependentUpon>AlignViewDoc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AlignViews\AlignViewDoc.vb" />
+    <Compile Include="AlignViews\frmAlignViewsScopeBox.Designer.vb">
+      <DependentUpon>frmAlignViewsScopeBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AlignViews\frmAlignViewsScopeBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExcelImport\CellClass.vb" />
+    <Compile Include="ExcelImport\ExcelImportDoc.designer.vb">
+      <DependentUpon>ExcelImportDoc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ExcelImport\ExcelImportDoc.vb" />
+    <Compile Include="ExcelImport\frmExcelImport.designer.vb">
+      <DependentUpon>frmExcelImport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ExcelImport\frmExcelImport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoveDetails\MoveViewsDoc.vb" />
+    <Compile Include="MoveDetails\frmMoveDetails.designer.vb">
+      <DependentUpon>frmMoveDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MoveDetails\frmMoveDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RenameSections\frmRenameSections.Designer.vb">
+      <DependentUpon>frmRenameSections.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RenameSections\frmRenameSections.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateSheet\frmSheetMaker.designer.vb">
+      <DependentUpon>frmSheetMaker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreateSheet\frmSheetMaker.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateSheet\mSheetMaker.vb" />
+    <Compile Include="CreateSheet\SheetMakerDoc.designer.vb">
+      <DependentUpon>SheetMakerDoc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreateSheet\SheetMakerDoc.vb" />
+    <Compile Include="DuplicateViews\frmDupViews.designer.vb">
+      <DependentUpon>frmDupViews.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DuplicateViews\frmDupViews.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlignViews\frmAlignViews.designer.vb">
+      <DependentUpon>frmAlignViews.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AlignViews\frmAlignViews.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlignLegends\frmAlignLegends.designer.vb">
+      <DependentUpon>frmAlignLegends.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AlignLegends\frmAlignLegends.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RenameViews\frmRenameViews.designer.vb">
+      <DependentUpon>frmRenameViews.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RenameViews\frmRenameViews.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RenameViews\RenameViewsDoc.vb" />
+    <Compile Include="RenumberViews\RenumberViewsDoc.vb" />
+    <Compile Include="Resources\AlphanumComp.vb" />
+    <Compile Include="Resources\NaturalComp.vb" />
+    <Compile Include="Resources\clsCollectors.vb" />
+    <Compile Include="CropViews\CropViewDoc.designer.vb">
+      <DependentUpon>CropViewDoc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CropViews\CropViewDoc.vb" />
+    <Compile Include="AutoRevisions\frmAutoRev.designer.vb">
+      <DependentUpon>frmAutoRev.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AutoRevisions\frmAutoRev.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CropViews\frmCropViews.designer.vb">
+      <DependentUpon>frmCropViews.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CropViews\frmCropViews.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="AutoRevisions\RevDocument.designer.vb">
+      <DependentUpon>RevDocument.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AutoRevisions\RevDocument.vb" />
+    <Compile Include="DuplicateViews\DupDoc.designer.vb">
+      <DependentUpon>DupDoc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DuplicateViews\DupDoc.vb" />
+    <Compile Include="RenameSections\RenameSectionDoc.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ACRevitAddin.addin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Resources\ACRlogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AlignViews\frmAlignViewsScopeBox.resx">
+      <DependentUpon>frmAlignViewsScopeBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoRevisions\frmAutoRev.resx">
+      <DependentUpon>frmAutoRev.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateSheet\frmSheetMaker.resx">
+      <DependentUpon>frmSheetMaker.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CropViews\frmCropViews.resx">
+      <DependentUpon>frmCropViews.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExcelImport\frmExcelImport.resx">
+      <DependentUpon>frmExcelImport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoveDetails\frmMoveDetails.resx">
+      <DependentUpon>frmMoveDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RenameSections\frmRenameSections.resx">
+      <DependentUpon>frmRenameSections.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DuplicateViews\frmDupViews.resx">
+      <DependentUpon>frmDupViews.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlignViews\frmAlignViews.resx">
+      <DependentUpon>frmAlignViews.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlignLegends\frmAlignLegends.resx">
+      <DependentUpon>frmAlignLegends.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RenameViews\frmRenameViews.resx">
+      <DependentUpon>frmRenameViews.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <Target Name="AfterClean">
+    <Delete Files="$(AppData)\Autodesk\REVIT\Addins\2015\ACRevitAddin.addin" />
+    <Delete Files="$(AppData)\Autodesk\REVIT\Addins\2015\ACRevitAddin.dll" />
+  </Target>
+  <PropertyGroup>
+    <PostBuildEvent>echo configuration :$(Configuration)
+
+if $(Configuration) == Debug2015 goto 2015
+if $(Configuration) == Debug2016 goto 2016
+if $(Configuration) == Debug2017 goto 2017
+if $(Configuration) == Debug2018 goto 2018
+if $(Configuration) == Debug2019 goto 2019
+if $(Configuration) == Debug2020 goto 2020
+if $(Configuration) == Debug2021 goto 2021
+if $(Configuration) == Debug2022 goto 2022
+
+:2015
+echo copying results to 2015
+copy "$(ProjectDir)bin\debug2015\ACRevitAddin.addin" "%25ALLUSERSPROFILE%25\Autodesk\Revit\Addins\2015"
+copy "$(ProjectDir)bin\debug2015\ACRevitAddin.dll" "%25ALLUSERSPROFILE%25\Autodesk\Revit\Addins\2015"
+
+copy "$(ProjectDir)bin\debug2015\ACRevitAddin.addin" "C:\Users\acarpentier\source\repos\Revit Addins Files Backup\2015"
+copy "$(ProjectDir)bin\debug2015\ACRevitAddin.dll" "C:\Users\acarpentier\source\repos\Revit Addins Files Backup\2015"
+goto exit
+
+:2016
+echo copying results to 2016
+copy "$(ProjectDir)bin\debug2016\ACRevitAddin.addin" "%25ALLUSERSPROFILE%25\Autodesk\Revit\Addins\2016"
+copy "$(ProjectDir)bin\debug2016\ACRevitAddin.dll" "%25ALLUSERSPROFILE%25\Autodesk\Revit\Addins\2016"
+
+copy "$(ProjectDir)bin\debug2016\ACRevitAddin.addin" "C:\Users\acarpentier\source\repos\Revit Addins Files Backup\2016"
+copy "$(ProjectDir)bin\debug2016\ACRevitAddin.dll" "C:\Users\acarpentier\source\repos\Revit Addins Files Backup\2016"
+goto exit
+
+:2017
+echo copying results to 2017
+copy "$(ProjectDir)bin\debug2017\ACRevitAddin.addin" "%25ALLUSERSPROFILE%25\Autodesk\Revit\Addins\2017"
+copy "$(ProjectDir)bin\debug2017\ACRevitAddin.dll" "%25ALLUSERSPROFILE%25\Autodesk\Revit\Addins\2017"
+
+copy "$(ProjectDir)bin\debug2017\ACRevitAddin.addin" "C:\Users\acarpentier\source\repos\Revit Addins Files Backup\2017"
+copy "$(ProjectDir)bin\debug2017\ACRevitAddin.dll" "C:\Users\acarpentier\source\repos\Revit Addins Files Backup\2017"
+goto exit
+
+:2018
+echo copying results to 2018
+copy "$(ProjectDir)bin\debug2018\ACRevitAddin.addin" "%25ALLUSERSPROFILE%25\Autodesk\Revit\Addins\2018"
+copy "$(ProjectDir)bin\debug2018\ACRevitAddin.dll" "%25ALLUSERSPROFILE%25\Autodesk\Revit\Addins\2018"
+
+copy "$(ProjectDir)bin\debug2018\ACRevitAddin.addin" "C:\Users\acarpentier\source\repos\Revit Addins Files Backup\2018"
+copy "$(ProjectDir)bin\debug2018\ACRevitAddin.dll" "C:\Users\acarpentier\source\repos\Revit Addins Files Backup\2018"
+goto exit
+
+:2019
+echo copying results to 2019
+copy "$(ProjectDir)bin\debug2019\ACRevitAddin.addin" "%25ALLUSERSPROFILE%25\Autodesk\Revit\Addins\2019"
+copy "$(ProjectDir)bin\debug2019\ACRevitAddin.dll" "%25ALLUSERSPROFILE%25\Autodesk\Revit\Addins\2019"
+
+copy "$(ProjectDir)bin\debug2019\ACRevitAddin.addin" "C:\Users\acarpentier\source\repos\Revit Addins Files Backup\2019"
+copy "$(ProjectDir)bin\debug2019\ACRevitAddin.dll" "C:\Users\acarpentier\source\repos\Revit Addins Files Backup\2019"
+goto exit
+
+:2020
+echo copying results to 2020
+copy "$(ProjectDir)bin\debug2020\ACRevitAddin.addin" "%25ALLUSERSPROFILE%25\Autodesk\Revit\Addins\2020"
+copy "$(ProjectDir)bin\debug2020\ACRevitAddin.dll" "%25ALLUSERSPROFILE%25\Autodesk\Revit\Addins\2020"
+
+copy "$(ProjectDir)bin\debug2020\ACRevitAddin.addin" "C:\Users\acarpentier\source\repos\Revit Addins Files Backup\2020"
+copy "$(ProjectDir)bin\debug2020\ACRevitAddin.dll" "C:\Users\acarpentier\source\repos\Revit Addins Files Backup\2020"
+goto exit
+
+:2021
+echo copying results to 2021
+copy "$(ProjectDir)bin\debug2021\ACRevitAddin.addin" "%25ALLUSERSPROFILE%25\Autodesk\Revit\Addins\2021"
+copy "$(ProjectDir)bin\debug2021\ACRevitAddin.dll" "%25ALLUSERSPROFILE%25\Autodesk\Revit\Addins\2021"
+
+copy "$(ProjectDir)bin\debug2021\ACRevitAddin.addin" "C:\Users\acarpentier\source\repos\Revit Addins Files Backup\2021"
+copy "$(ProjectDir)bin\debug2021\ACRevitAddin.dll" "C:\Users\acarpentier\source\repos\Revit Addins Files Backup\2021"
+goto exit
+
+:2022
+echo copying results to 2022
+copy "$(ProjectDir)bin\debug2021\ACRevitAddin.addin" "%25ALLUSERSPROFILE%25\Autodesk\Revit\Addins\2022"
+copy "$(ProjectDir)bin\debug2021\ACRevitAddin.dll" "%25ALLUSERSPROFILE%25\Autodesk\Revit\Addins\2022"
+
+copy "$(ProjectDir)bin\debug2021\ACRevitAddin.addin" "C:\Users\acarpentier\source\repos\Revit Addins Files Backup\2022"
+copy "$(ProjectDir)bin\debug2021\ACRevitAddin.dll" "C:\Users\acarpentier\source\repos\Revit Addins Files Backup\2022"
+goto exit
+
+C:\Users\acarpentier\source\repos\
+
+:exit
+
+
+</PostBuildEvent>
+  </PropertyGroup>
+</Project>

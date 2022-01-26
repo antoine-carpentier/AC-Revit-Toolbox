@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ACRevitAddin", "ACRevitAddin.vbproj", "{5D75A509-C2AF-46CC-8BB0-C39A6CA327DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug2015|Any CPU = Debug2015|Any CPU
+		Debug2016|Any CPU = Debug2016|Any CPU
+		Debug2017|Any CPU = Debug2017|Any CPU
+		Debug2018|Any CPU = Debug2018|Any CPU
+		Debug2019|Any CPU = Debug2019|Any CPU
+		Debug2020|Any CPU = Debug2020|Any CPU
+		Debug2021|Any CPU = Debug2021|Any CPU
+		Debug2022|Any CPU = Debug2022|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D75A509-C2AF-46CC-8BB0-C39A6CA327DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D75A509-C2AF-46CC-8BB0-C39A6CA327DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D75A509-C2AF-46CC-8BB0-C39A6CA327DB}.Debug2015|Any CPU.ActiveCfg = Debug2015|Any CPU
+		{5D75A509-C2AF-46CC-8BB0-C39A6CA327DB}.Debug2015|Any CPU.Build.0 = Debug2015|Any CPU
+		{5D75A509-C2AF-46CC-8BB0-C39A6CA327DB}.Debug2016|Any CPU.ActiveCfg = Debug2016|Any CPU
+		{5D75A509-C2AF-46CC-8BB0-C39A6CA327DB}.Debug2016|Any CPU.Build.0 = Debug2016|Any CPU
+		{5D75A509-C2AF-46CC-8BB0-C39A6CA327DB}.Debug2017|Any CPU.ActiveCfg = Debug2017|Any CPU
+		{5D75A509-C2AF-46CC-8BB0-C39A6CA327DB}.Debug2017|Any CPU.Build.0 = Debug2017|Any CPU
+		{5D75A509-C2AF-46CC-8BB0-C39A6CA327DB}.Debug2018|Any CPU.ActiveCfg = Debug2018|Any CPU
+		{5D75A509-C2AF-46CC-8BB0-C39A6CA327DB}.Debug2018|Any CPU.Build.0 = Debug2018|Any CPU
+		{5D75A509-C2AF-46CC-8BB0-C39A6CA327DB}.Debug2019|Any CPU.ActiveCfg = Debug2019|Any CPU
+		{5D75A509-C2AF-46CC-8BB0-C39A6CA327DB}.Debug2019|Any CPU.Build.0 = Debug2019|Any CPU
+		{5D75A509-C2AF-46CC-8BB0-C39A6CA327DB}.Debug2020|Any CPU.ActiveCfg = Debug2020|Any CPU
+		{5D75A509-C2AF-46CC-8BB0-C39A6CA327DB}.Debug2020|Any CPU.Build.0 = Debug2020|Any CPU
+		{5D75A509-C2AF-46CC-8BB0-C39A6CA327DB}.Debug2021|Any CPU.ActiveCfg = Debug2021|Any CPU
+		{5D75A509-C2AF-46CC-8BB0-C39A6CA327DB}.Debug2021|Any CPU.Build.0 = Debug2021|Any CPU
+		{5D75A509-C2AF-46CC-8BB0-C39A6CA327DB}.Debug2022|Any CPU.ActiveCfg = Debug2022|Any CPU
+		{5D75A509-C2AF-46CC-8BB0-C39A6CA327DB}.Debug2022|Any CPU.Build.0 = Debug2022|Any CPU
+		{5D75A509-C2AF-46CC-8BB0-C39A6CA327DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D75A509-C2AF-46CC-8BB0-C39A6CA327DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C95DB222-89A3-4B0D-8301-450B1F306CAE}
+	EndGlobalSection
+EndGlobal
